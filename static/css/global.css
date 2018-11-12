@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: #666;
+}
+
+main {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+main .layout {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
+main .wrapper {
+  position: relative;
+}
+
+main h1 {
+  margin: 10px 0 30px 10px;
+}
+
+main .waterfall {
+  position: relative;
+}
+
+main figure {
+  position: absolute;
+  width: 210px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #999; 
+  padding: 10px;
+  margin: 10px;
+}
+
+main figure img {
+  width: 200px;
+  height: 150px;
+}
+
+main figure figcaption {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+main figure p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+main #load {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+}
+
+#load .icon-loading {
+  display: inline-block;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
